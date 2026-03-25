@@ -16,7 +16,7 @@ export default function Navbar({ className }: { className: string }) {
   const pathname = usePathname();
 
   return (
-    <header className={`flex justify-center ${className}`}>
+    <header className={`flex justify-center ${className}`} style={{ position: "sticky", top: 0, zIndex: 50, paddingTop: "20px", paddingBottom: "8px", backgroundColor: "transparent" }}>
       <div className="flex h-20 w-full max-w-[1256px] items-center rounded-[100px] border border-[#EEF0F3] bg-[var(--color-primary)]" style={{ paddingLeft: "32px", paddingRight: "24px" }}>
         <div className="shrink-0">
           <Image src={childrenLogo} width={127} height={127} alt="children.lk"/>
