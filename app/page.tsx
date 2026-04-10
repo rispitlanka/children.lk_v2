@@ -1,5 +1,7 @@
 import Hero from "./components/Hero";
 import QuickAccessHubs from "./components/QuickAccessHubs";
+import ResourcesHub from "./components/Accesshubs/ResourcesHub";
+import MediaHub from "./components/Accesshubs/MediaHub";
 
 export default function Home() {
   return (
@@ -8,6 +10,14 @@ export default function Home() {
         <Hero />
       </div>
       <QuickAccessHubs />
+      <ResourcesHub />
+      
+
+      {/* just for testing UI */}
+      {/* Learning Hub Spacer - complete empty space for now */}
+      <div style={{ height: "160px", width: "100%" }} />
+
+      <MediaHub />
     </main>
   );
 }
